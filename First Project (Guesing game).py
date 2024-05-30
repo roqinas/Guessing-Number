@@ -36,20 +36,20 @@ while True:
         continue
     guesses +=1
     if user_guess == rn:
-        print ('You got it')
+        print ('\nYou got it')
         break
     
     if user_guess > rn:
         print('You were above the number!')
         if guesses >= 5 and  user_guess > rn:
-         print('try this number', user_guess - (user_guess - rn))
+         print('OK try this out \n*Subtract the number you choose from', user_guess - rn)
     elif user_guess < rn:
         print('You were below the number!')
         if guesses >= 5 and  user_guess < rn:
-            print('try this', user_guess + (rn - user_guess)) 
+            print('OK try this out \n*Add the number you choose to', rn - user_guess) 
 
         
 
         
         
-print ('You got it in' ,guesses, 'guesses')
+print ('\nYou got it in' ,guesses, 'guesses')
